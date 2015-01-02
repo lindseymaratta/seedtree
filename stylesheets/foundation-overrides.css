@@ -1,8 +1,8 @@
  
 body{
 	background: #06996c;
+	font-family: Lato, Helvetica, sans-serif;
 }
-
 
 div{
 	border: 1px red solid;
@@ -17,7 +17,6 @@ height: 150px;
 }
 
 .main-nav {
-
 	padding-top: 30px;
 	margin: 0;
 }
@@ -26,18 +25,71 @@ height: 150px;
 	padding: 20px 0 0 40px;
 	list-style-type: none;
 	text-transform: uppercase;
+	font-weight: 300;
 }
 .main-nav a {
 	color: white;
+	padding-bottom: 8px;
+	transition: border 0.5s ease;
+	border-bottom: 0;
 }
-.search {
-	padding: 0 10px;
+
+.main-nav a:hover {
+	border-bottom: 3px solid white;
 }
-.search input{
-	margin: 0;
-	text-align:right;
-}
+
 button {
 	background: rgba(255,255,255, 0.25);
 	border: white 1px solid;
 }
+
+
+.searchBox {
+	text-align:right;
+	background: url("../images/icons/search.png") -7px 0;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+
+}
+input [type="text"]{
+	margin: 0;
+	padding: 0;
+}
+
+/*Footer animations for social icons;
+
+/* Pulse Grow 
+@-webkit-keyframes pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+@keyframes pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+.pulse-grow {
+  display: inline-block;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.pulse-grow:hover, .pulse-grow:focus, .pulse-grow:active {
+  -webkit-animation-name: pulse-grow;
+  animation-name: pulse-grow;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
