@@ -1,27 +1,28 @@
  
+body{
+	background: #500600;
+}
 
- .button{
- 	background-color: red;
- }
 
 div{
 	border: 1px red solid;
 }
 
-
 .logo{
-	height:240px;
+background: url("../images/logo.svg");
+background-size: 170px;
+background-position: bottom center;
+height: 150px;
+
 }
-.main li{
+
+.main-nav {
+	float:right;
+}
+.main-nav li{
 	display: inline;
-	float: left;
-	padding-left: 15px;
+	padding: 20px;
+	list-style-type: none;
 }
-.main button {
-	display: inline;
-	padding:10px;
-	float: left;
-}
-.search input{
-	width: 100%;
-}
+
+
