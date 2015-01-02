@@ -1,6 +1,6 @@
  
 body{
-	background: #500600;
+	background: #06996c;
 }
 
 
@@ -9,7 +9,7 @@ div{
 }
 
 .logo{
-background: url("../images/logo.svg");
+background: url("../images/logo.svg") no-repeat;
 background-size: 170px;
 background-position: bottom center;
 height: 150px;
@@ -17,12 +17,27 @@ height: 150px;
 }
 
 .main-nav {
-	float:right;
+
+	padding-top: 30px;
+	margin: 0;
 }
 .main-nav li{
 	display: inline;
-	padding: 20px;
+	padding: 20px 0 0 40px;
 	list-style-type: none;
+	text-transform: uppercase;
 }
-
-
+.main-nav a {
+	color: white;
+}
+.search {
+	padding: 0 10px;
+}
+.search input{
+	margin: 0;
+	text-align:right;
+}
+button {
+	background: rgba(255,255,255, 0.25);
+	border: white 1px solid;
+}
