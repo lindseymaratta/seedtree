@@ -72,6 +72,47 @@ button {
 
 }
 
+/*
+Landing page Masthead styles
+=================================
+*/
+
+.masthead{
+	background-image: url("../images/masthead.jpg");
+	background-size: cover;
+	height: 700px;
+
+}
+
+
+.featured {
+	height:300px;
+	bottom:0;
+
+
+}
+
+
+/*
+Landing page story styles
+=================================
+*/
+
+.story{
+	background: #bf6b55;
+	text-align: center;
+	color: white;
+}
+
+.story img {
+	width:150px;
+}
+
+/*
+Footer styles
+=================================
+*/
+
 
 .footer {
 	background: #06996c;
