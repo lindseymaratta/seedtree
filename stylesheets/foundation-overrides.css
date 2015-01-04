@@ -55,6 +55,11 @@ height: 150px;
 button {
 	background: rgba(255,255,255, 0.25);
 	border: white 1px solid;
+	padding: 10px 25px;
+	font-size: 80%;
+	font-weight: 200;
+	letter-spacing: .08em;
+	text-transform: uppercase;
 }
 
 
@@ -71,26 +76,31 @@ button {
 .footer {
 	background: #06996c;
 	color: white;
+	font-weight: 300;
 }
 
 .footer a {
 	color: white;
+}
 
-}
-.social{
-	text-align: center;
-}
 .footer ul{
 	list-style-type: none;
 }
+.footer-list li:first-child{
+	line-height:2;
+	font-weight: 400;
 
-.social-icons ul{
-	border: 1px black solid;
-	text-align: left;
+}
+.social {
+	text-align: center;
+
 }
 .social-icons li{
-	float:left;
+	display:inline-block;
+	padding: 0 10px;
+
 }
+
 
 /*Footer animations for social icons;
 
