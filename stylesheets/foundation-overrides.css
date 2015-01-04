@@ -1,11 +1,22 @@
  
+/*Global styles
+
+======================================*/
+
 body{
-	background: #06996c;
 	font-family: Lato, Helvetica, sans-serif;
 }
 
 div{
 	border: 1px red solid;
+}
+
+/*
+Header Styles
+======================================*/
+
+.header {
+	background: #06996c;
 }
 
 .logo{
@@ -31,6 +42,9 @@ height: 150px;
 	color: white;
 	padding-bottom: 8px;
 	transition: border 0.5s ease;
+	
+	/*ADD PREFIXED*/
+
 	border-bottom: 0;
 }
 
@@ -52,9 +66,30 @@ button {
 	padding: 0;
 
 }
-input [type="text"]{
-	margin: 0;
-	padding: 0;
+
+
+.footer {
+	background: #06996c;
+	color: white;
+}
+
+.footer a {
+	color: white;
+
+}
+.social{
+	text-align: center;
+}
+.footer ul{
+	list-style-type: none;
+}
+
+.social-icons ul{
+	border: 1px black solid;
+	text-align: left;
+}
+.social-icons li{
+	float:left;
 }
 
 /*Footer animations for social icons;
