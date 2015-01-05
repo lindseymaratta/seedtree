@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Seedtree</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/foundation.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/foundation-overrides.css">
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<!-- JQuery -->
+	<script src="js/modernizr.js"></script>
+	<script src="js/jquery.min.js"></script>
+</head>
+<body>
+	<div class="container header">
+		<div class="row header">
+		  <div class="small-12 large-3 columns logo">
+		  </div>
+		  <div class="small-12 large-8 columns">
+		    <div class="row">
+		      <div class="small-12 columns">
+		        <ul class="main-nav">
+									<li>
+										<a href="#">How it Works</a>
+									</li>
+									<li>
+										<a href="#">Explore Charities</a>
+									</li>
+									<li>
+										<a href="#">Sign In</a>
+									</li>
+									<li>
+										<a href="#">
+											<button>Sign Up</button>
+										</a>
+									</li>
+								</ul>
+		      </div>
+		    </div>
+		    <div class="row">
+		      <div class="small-12 columns search">
+		        <form>
+		        	<input type="text" name="search" class="searchBox" placeholder="search & donate to local & international charities">
+		        </form>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</div>
+	<div class="container body">
+		<div class="row">
+			<div class="small-12 columns">
+				<h2 class="title-bar">lindsey maratta</h2>
+				<p>lindsey.maratta@gmail.com<br>
+					+971 52 767 8028<br>
+					make my contact info public</p>
+				<h2 class="title-bar">my donations</h2>
+				<table>
+					<tr>
+						<td>Charity</td>
+						<td>Amount</td>
+						<td>Date</td>
+					</tr>
+					<tr>
+						<td>Habitat for Humanity</td>
+						<td>$50.00</td>
+						<td>11/27/14</td>
+					</tr>
+					<tr>
+						<td>Women Who Code</td>
+						<td>$75.00</td>
+						<td>1/15/15</td>
+					</tr>
+				</table>
+				<button class="outline">export as PDF</button><button class="outline">export as .xls</button>
+				<h2 class="title-bar">Favorites</h2>
+				<div class="multiple-items">
+  				<div>your content</div>
+  				<div>your content</div>
+ 					<div>your content</div>
+ 					<div>your content</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container footer">
+		<div class="row">
+			<div class="small-2 columns about">
+				<ul class="footer-list">
+					<li>About</li>
+					<li><a href="#">Story</a></li>
+					<li><a href="#">Press</a></li>
+					<li><a href="#">People</a></li>
+					<li><a href="#">Careers</a></li>
+				</ul>
+			</div>
+			<div class="small-2 columns help">
+				<ul class="footer-list">
+					<li>Help</li>
+					<li><a href="#">Support</a></li>
+					<li><a href="#">Security</a></li>
+					<li><a href="#">Legal</a></li>
+					<li><a href="#">Privacy</a></li>
+				</ul>
+			</div>
+			<div class="small-3 columns contact">
+				<ul class="footer-list">
+					<li>Contact</li>
+					<li>+1 555 555-5555</li>
+					<li><a href="mailto:">info@seedtree.org</a></li>
+					<li>P.O. Box 55555</li>
+					<li>New York, NY 123456</li>
+				</ul>
+			</div>
+			<div class="small-5 columns social">
+				<ul class="footer-list">
+					<li>Follow us on these social channels:</li>
+				</ul>
+				<ul class="social-icons">
+					<li><a href="#" class="pulse-grow"><img src="images/icons/facebook.png"></a></li>
+					<li><a href="#" class="pulse-grow"><img src="images/icons/twitter.png"></a></li>
+					<li><a href="#" class="pulse-grow"><img src="images/icons/instagram.png"></a></li>
+					<li><a href="#" class="pulse-grow"><img src="images/icons/google.png"></a></li>
+				</ul>
+				<p>Or better yet, &nbsp &nbsp <button>Join Us</button></p>
+			</div>
+	</div>
+	<script src="js/foundation.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script>
+		$(document).foundation();
+
+		$(document).ready(function(){
+			$('.multiple-items').slick({
+		  infinite: true,
+		  slidesToShow: 3,
+		  slidesToScroll: 3
+			});
+		});
+	</script>
+</body>
+</html>
