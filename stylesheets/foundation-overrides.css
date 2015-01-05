@@ -1,4 +1,15 @@
- 
+/*Global
+Header
+Buttons
+headings
+landing page 
+	masthead
+	story
+	news/blog
+footer
+
+
+
 /*Global styles
 
 ======================================*/
@@ -7,7 +18,7 @@ body{
 	font-family: Lato, Helvetica, sans-serif;
 }
 
-div{
+/*div{
 	border: 1px red solid;
 }
 
@@ -20,11 +31,11 @@ Header Styles
 }
 
 .logo{
-background: url("../images/logo.svg") no-repeat;
+background: url("../images/logo.svg") no-repeat bottom center;
 background-size: 170px;
-background-position: bottom center;
+display: block;
 height: 150px;
-
+text-indent: -99999px;
 }
 
 .main-nav {
@@ -83,8 +94,16 @@ button {
 	color: #d45634;
 }
 
+.circle{
+	border-radius: 20em;
+	height: 100px;
+	width: 100px;
+	border: 15px solid;
+	padding: 0;
+}
+
 /*
-Headers
+Headings h1 h2 h3
 =================================
 */
 
@@ -102,6 +121,7 @@ Headers
 	font-style: italic;
 	font-size: 100%;
 	color:#5f5b5b;
+	margin-bottom: 5px;
 }
 
 h3 {
@@ -117,19 +137,21 @@ Landing page Masthead styles
 .masthead{
 	background-image: url("../images/masthead.jpg");
 	background-size: cover;
-	height: 700px;
-
+	height: 600px;
+	position: relative;;
 }
 .jumbo{
 	font-size:80px;
 }
 
 .featured {
-	height:300px;
+	height:180px;
 	bottom:0;
 	background: rgba(255,255,255,.5);
-
-
+	padding-top: 20px;
+	position: absolute;
+	width: 100%;
+	left: 0;
 }
 
 
@@ -153,11 +175,14 @@ Landing page story styles
 Landing page news and blog
 =================================
 */
-
+.news-blog{
+	margin: 20px 0;
+}
 .sidebar {
 	color: #d45634;
 	border: #d45634 1px solid;
-	padding:50px;}
+	padding:40px;
+	text-align: center;}
 
 .news-blog {
 	color: #5f5b5b;
@@ -173,6 +198,7 @@ Footer styles
 	background: #06996c;
 	color: white;
 	font-weight: 300;
+	padding-top: 50px;
 }
 
 .footer a {
