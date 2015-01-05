@@ -5,15 +5,20 @@
 	<title>Seedtree</title>
 	<link rel="stylesheet" type="text/css" href="stylesheets/foundation.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/foundation-overrides.css">
+
+	<!-- JQuery -->
+	<script src="js/modernizr.js"></script>
+	<script src="js/jquery.min.js"></script>
 </head>
 <body>
-	<div class="container header">
+	<header class="container header">
 		<div class="row header">
-		  <div class="small-12 large-3 columns logo">
-		  </div>
-		  <div class="small-12 large-8 columns">
+		  <nav class="small-12 medium-3 columns">
+		  	<a href="#" class="logo">Seed Tree</a>
+		  </nav>
+		  <div class="small-12 medium-9 columns">
 		    <div class="row">
-		      <div class="small-12 columns">
+		      <nav class="small-12 columns">
 		        <ul class="main-nav">
 									<li>
 										<a href="#">How it Works</a>
@@ -30,7 +35,7 @@
 										</a>
 									</li>
 								</ul>
-		      </div>
+		      </nav>
 		    </div>
 		    <div class="row">
 		      <div class="small-12 columns search">
@@ -41,38 +46,38 @@
 		    </div>
 		  </div>
 		</div>
-	</div>
-	<div class="container masthead">
-		<div class="row">
-			<div class="small-12 columns featured">
-					<div class="small-9 columns">
-						<h4 class="subtitle">featured charity</h3>
-						<h2 class="title-bar">education in africa</h2>
-						<p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, animi explicabo quasi, consequuntur quidem iure repellat rerum, voluptates non sunt quibusdam amet excepturi modi temporibus iste, neque impedit rem cupiditate.</p>
-					</div>
-					<div class="small-3 column">
-						<button class="circle outline">donate</button>
-					</div>
+	</header>
+	<div class="masthead">
+		<div class="container featured">
+			<div class="row">
+				<div class="small-10 columns">
+					<h4 class="subtitle">featured charity</h3>
+					<h2 class="title-bar">education in africa</h2>
+					<p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, animi explicabo quasi, consequuntur quidem iure repellat rerum, voluptates non sunt quibusdam amet excepturi modi temporibus iste, neque impedit rem cupiditate.</p>
 				</div>
+				<div class="small-2 column">
+					<button class="circle outline">donate</button>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="container story">
 		<div class="row">
-			<div class="small-3 columns">
+			<div class="small-12 medium-3 columns">
 				<img src="images/icons/gift.svg">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam suscipit fugit maxime distinctio, aut numquam consectetur iste! Quibusdam cumque earum ad iure suscipit. Temporibus, laudantium. Deserunt porro nisi, optio aliquam!</p>
 			</div>
-			<div class="small-1 columns">
+			<div class="small-12 medium-1 columns">
 				<p class="jumbo">+</p>
 			</div>
-			<div class="small-4 columns">
+			<div class="small-12 medium-4 columns">
 				<img src="images/icons/heart.svg">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum qui quia aperiam, dolor odio quaerat nesciunt aut vero illo sed nam ducimus? Numquam eos molestias non, iste. Quasi, ea quos.</p>
 			</div>
-			<div class="small-1 columns">
+			<div class="small-12 medium-1 columns">
 				<p class="jumbo">=</p>
 			</div>
-			<div class="small-3 columns">
+			<div class="small-12 medium-3 columns">
 				<img src="images/icons/house.svg">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius cupiditate dolores nihil culpa explicabo iusto, deserunt facilis obcaecati quos ab sint facere suscipit deleniti dolorum nostrum similique ipsam repellendus esse.</p>
 			</div>
@@ -80,13 +85,13 @@
 	</div>
 	<div class="container news-blog">
 		<div class="row">
-			<div class="small-9 columns">
+			<div class="small-12 medium-9 columns">
 				<div class="row news">
 					<h2 class="title-bar">Latest Community News</h2>
-					<div class="small-5 columns">
+					<div class="small-12 medium-5 columns">
 						<img src="images/news.jpg">
 					</div>
-					<div class="small-7 columns news">
+					<div class="small-12 medium-7 columns news">
 						<h3>X Reaches Goal</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas eveniet, commodi. Officiis rerum odio at, assumenda beatae consequuntur sit ipsum ut quis voluptas temporibus ducimus repellendus, alias tenetur quia voluptate!
 						</p>
@@ -94,17 +99,17 @@
 				</div>
 				<div class="row">
 					<h2 class="title-bar">From the SeedTree Blog</h2>
-						<div class="small-5 columns blog">
+						<div class="small-12 medium-5 columns blog">
 						<img src="images/blog.jpg">
 					</div>
-					<div class="small-7 columns">
+					<div class="small-12 medium-7 columns">
 						<h3>Startup Charity 101</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas eveniet, commodi. Officiis rerum odio at, assumenda beatae consequuntur sit ipsum ut quis voluptas temporibus ducimus repellendus, alias tenetur quia voluptate!
 						</p>
 					</div>
 				</div>
 			</div>
-			<div class="small-3 columns sidebar">
+			<div class="small-12 medium-3 columns sidebar">
 			<p>Want your story featured?
 					Write to us at news@seedtree.org and tell us what you've accomplished and how SeedTree has helped you reach your goals or connect with others.
  					Don't have a story to tell yet? Sign up your charity or start giving today:</p>
@@ -149,12 +154,15 @@
 				<ul class="social-icons">
 					<li><a href="#" class="pulse-grow"><img src="images/icons/facebook.png"></a></li>
 					<li><a href="#" class="pulse-grow"><img src="images/icons/twitter.png"></a></li>
-					<li><a href="#" class="pulse-grow"><img src="images/icons/pinterest.png"></a></li>
 					<li><a href="#" class="pulse-grow"><img src="images/icons/instagram.png"></a></li>
 					<li><a href="#" class="pulse-grow"><img src="images/icons/google.png"></a></li>
 				</ul>
 				<p>Or better yet, &nbsp &nbsp <button>Join Us</button></p>
 			</div>
 	</div>
+	<script src="js/foundation.min.js"></script>
+	<script>
+		$(document).foundation();
+	</script>
 </body>
 </html>
