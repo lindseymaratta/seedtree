@@ -52,15 +52,6 @@ height: 150px;
 	border-bottom: 3px solid white;
 }
 
-button {
-	background: rgba(255,255,255, 0.25);
-	border: white 1px solid;
-	padding: 10px 25px;
-	font-size: 80%;
-	font-weight: 200;
-	letter-spacing: .08em;
-	text-transform: uppercase;
-}
 
 
 .searchBox {
@@ -72,6 +63,52 @@ button {
 
 }
 
+
+/*Buttons
+================================
+*/
+
+button {
+	background: rgba(255,255,255, 0.25);
+	border: white 1px solid;
+	padding: 10px 25px;
+	font-size: 80%;
+	font-weight: 200;
+	letter-spacing: .08em;
+	text-transform: uppercase;
+}
+
+.outline {
+	border: #d45634 1px solid;
+	color: #d45634;
+}
+
+/*
+Headers
+=================================
+*/
+
+.title-bar{
+	color: #d45634;
+	text-transform: uppercase;
+	font-size: 130%;
+	background: #edecec;
+	background-position: fixed absolute;
+	left:0;
+
+}
+
+.subtitle {
+	font-style: italic;
+	font-size: 100%;
+	color:#5f5b5b;
+}
+
+h3 {
+	color:#06996c;
+	font-size: 110%;
+	font-weight: 400;
+}
 /*
 Landing page Masthead styles
 =================================
@@ -83,11 +120,14 @@ Landing page Masthead styles
 	height: 700px;
 
 }
-
+.jumbo{
+	font-size:80px;
+}
 
 .featured {
 	height:300px;
 	bottom:0;
+	background: rgba(255,255,255,.5);
 
 
 }
@@ -106,8 +146,23 @@ Landing page story styles
 
 .story img {
 	width:150px;
+	margin: 20px 0;
 }
 
+/* 
+Landing page news and blog
+=================================
+*/
+
+.sidebar {
+	color: #d45634;
+	border: #d45634 1px solid;
+	padding:50px;}
+
+.news-blog {
+	color: #5f5b5b;
+
+}
 /*
 Footer styles
 =================================
@@ -139,26 +194,8 @@ Footer styles
 .social-icons li{
 	display:inline-block;
 	padding: 0 10px;
-
 }
 
-
-/*Footer animations for social icons;
-
-/* Pulse Grow 
-@-webkit-keyframes pulse-grow {
-  to {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-}
-
-@keyframes pulse-grow {
-  to {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-}
 
 .pulse-grow {
   display: inline-block;
@@ -178,4 +215,20 @@ Footer styles
   -webkit-animation-direction: alternate;
   animation-direction: alternate;
 }
+
+ 
+@-webkit-keyframes pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+@keyframes pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
 
