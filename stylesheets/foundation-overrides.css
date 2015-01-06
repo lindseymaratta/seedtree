@@ -7,8 +7,7 @@ landing page
 	story
 	news/blog
 footer
-
-
+media queries
 
 /*Global styles
 
@@ -18,8 +17,7 @@ body{
 	font-family: Lato, Helvetica, sans-serif;
 }
 
-div{
-	border: 1px red solid;
+/*	border: 1px red solid;
 }
 
 /*
@@ -274,5 +272,69 @@ Footer styles
     transform: scale(1.1);
   }
 }
+
+
+@media (max-width: 800px) {
+
+.main-nav  {
+	font-size: 80%
+
+}
+
+}
+
+@media (max-width: 745px) {
+.main-nav li {
+	padding: 10px;
+}
+.main-nav {
+	font-size: 100%;
+	text-align: center;
+}
+.featured {
+	padding-bottom: 50px;
+}
+.social-icons li{
+	display:block;
+	padding: 10px 0;
+}
+
+.sidebar {
+	display: block;
+}
+
+}
+
+@media (max-width: 640px){
+	.featured {
+		text-align: center;
+		padding-bottom:350px;
+	}
+
+	.footer-list {
+		text-align: center;
+		font-size: 120%;
+	}
+	button{
+		display: block;
+		width: 80%;
+		margin: 20px auto;
+
+	}
+
+}
+@media (max-width: 410px) {
+
+	.main-nav li {
+		display: block;
+		font-size: 140%;
+	}
+	.search input{
+		display:none;
+	}
+	
+}
+
+
 
 
