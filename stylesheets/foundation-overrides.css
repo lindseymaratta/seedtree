@@ -79,7 +79,7 @@ text-indent: -99999px;
 ================================
 */
 
-button {
+button, input[type="submit"] {
 	background: rgba(255,255,255, 0.25);
 	border: white 1px solid;
 	padding: 10px 25px;
@@ -89,7 +89,7 @@ button {
 	text-transform: uppercase;
 }
 
-.outline {
+.outline, input[type="submit"] {
 	border: #d45634 1px solid;
 	color: #d45634;
 	background: white;
