@@ -18,7 +18,7 @@ body{
 	font-family: Lato, Helvetica, sans-serif;
 }
 
-/*div{
+div{
 	border: 1px red solid;
 }
 
@@ -92,6 +92,9 @@ button {
 .outline {
 	border: #d45634 1px solid;
 	color: #d45634;
+	background: white;
+	padding: 10px 25px;
+	text-transform: uppercase;
 }
 
 .circle{
@@ -113,7 +116,6 @@ Headings h1 h2 h3
 	font-size: 130%;
 	background: #edecec;
 	background-position: fixed absolute;
-	left:0;
 
 }
 
@@ -187,6 +189,22 @@ Landing page news and blog
 .news-blog {
 	color: #5f5b5b;
 
+}
+/*
+User Dashboard
+==================================
+*/
+
+table {
+	width:100%;
+}
+
+/*
+Slider styles
+*/
+
+.slider-content {
+	border: #d45634 1px solid;
 }
 /*
 Footer styles
