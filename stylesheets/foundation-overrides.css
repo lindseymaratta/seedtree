@@ -7,7 +7,7 @@ landing page
 	story
 	news/blog
 footer
-media queries
+media queriesx
 
 /*Global styles
 
@@ -21,7 +21,7 @@ body{
 	text-align: center;
 }
 
-div {border: 1px red solid;
+/*div {border: 1px red solid;
 }
 
 /*
@@ -101,6 +101,7 @@ button:hover{
 	background: white;
 	padding: 10px 25px;
 	text-transform: uppercase;
+	margin:5px;
 }
 
 
@@ -127,7 +128,19 @@ Headings h1 h2 h3
 	text-transform: uppercase;
 	font-size: 130%;
 	background: #edecec;
-	background-position: fixed absolute;
+	position: relative;
+	width: 40%;
+	padding-left: 23%;
+	padding-right: 5%;
+	left:-20%;
+	display: inline;
+	line-height: 2em;
+	box-shadow: 0 3px 2px #888888;
+	-webkit-box-shadow: 0 3px 2px #888888;
+	-mozbox-shadow: 0 3px 2px #888888;
+	
+
+
 
 }
 
@@ -207,17 +220,25 @@ User Dashboard
 ==================================
 */
 
+.indent {
+	text-indent: 100px;
+}
+
 table {
 	width:100%;
 }
 
+.center {
+	text-align: center;
+}
 /*
 Slider styles
 */
 
-.slider-content {
-	border: #d45634 1px solid;
+.slider-content img{
+	border: #d45634 2px solid;
 }
+
 /*
 
 
