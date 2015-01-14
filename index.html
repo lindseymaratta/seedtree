@@ -12,11 +12,11 @@
 </head>
 <body>
 	
-	<!-- Popup form!-->
-	<div id="abc">
-		<div id="popupContact">
+	<!-- Sign UpPopup form!-->
+	<div id="SignUp">
+		<div id="popupSignup">
 			<form action="#" id="form" method="post" name="form">
-			<img id="close" src="images/x.png" onclick ="div_hide()">
+			<img id="close" src="images/x.png" onclick ="div_hide1()">
 			<input id="email" name="email" placeholder="Email" type="text">
 			<input id="password" name="password" placeholder="Choose password" type="text">
 			<input id="password" name="password" placeholder="Repeat password" type="text">
@@ -31,6 +31,27 @@
 
 <!--end pop up -->
 
+<!--SignIn Popup Form-->
+
+<div id="SignIn">
+		<div id="popupSignIn">
+			<form action="#" id="form" method="post" name="form">
+			<img id="close" src="images/x.png" onclick ="div_hide2()">
+			<input id="email" name="email" placeholder="Email" type="text">
+			<input id="password" name="password" placeholder="Password" type="text">
+			<input type="checkbox" name="remember" value="remember"> Remember me<br>
+			<a href="javascript:%20check_empty()" id="submit"><button>Sign In</button></a>
+			<hr>
+			<button class="facebook">Sign in with Facebook</button>
+			<button class="twitter">Sign in with Twitter</button>
+			<button class="google">Sign in with Google+</button>
+			</form>
+		</div>
+	</div>
+
+<!--end pop up -->
+
+<!--Start Header -->
 	<header class="container header">
 		<div class="row header">
 		  <nav class="small-12 medium-3 columns">
@@ -47,11 +68,11 @@
 										<a href="explore.html">Explore Charities</a>
 									</li>
 									<li class="underline">
-										<a href="#">Sign In</a>
+										<a href="#" id="popup" onclick="div_show2()">Sign In</a>
 									</li>
 									<li>
 										<a href="#">
-											<button id="popup" onclick="div_show()">Sign Up</button>
+											<button id="popup" onclick="div_show1()">Sign Up</button>
 										</a>
 									</li>
 								</ul>
@@ -67,6 +88,10 @@
 		  </div>
 		</div>
 	</header>
+<!--End Header-->
+
+<!--Start Body-->
+
 	<div class="masthead">
 		<div class="container featured">
 			<div class="row">
@@ -103,7 +128,7 @@
 			</div>
 		</div>
 		<div>
-			<a href="#"><button id="popup" class="center" onclick="div_show()">Get Involved</button></a>
+			<a href="#"><button id="popup" class="center" onclick="div_show1()">Get Involved</button></a>
 		</div>
 	</div>
 	<div class="container news-blog">
@@ -136,7 +161,7 @@
 			<p>Want your story featured?
 					Write to us at news@seedtree.org and tell us what you've accomplished and how SeedTree has helped you reach your goals or connect with others.
  					Don't have a story to tell yet? Sign up your charity or start giving today:</p>
- 					<button id="popup" onclick="div_show()" class="outline">sign up</button>
+ 					<button id="popup" onclick="div_show1()" class="outline">sign up</button>
 
 			</div>
 		</div>
@@ -181,7 +206,7 @@
 					<li><a href="#" class="pulse-grow"><img src="images/icons/instagram.png"></a></li>
 					<li><a href="#" class="pulse-grow"><img src="images/icons/google.png"></a></li>
 				</ul>
-				<p>Or better yet, &nbsp &nbsp <button id="popup" onclick="div_show()">Join Us</button></p>
+				<p>Or better yet, &nbsp &nbsp <button id="popup" onclick="div_show1()">Join Us</button></p>
 			</div>
 	</div>
 	<script src="js/foundation.min.js"></script>
@@ -199,12 +224,21 @@
 		}
 		}
 		//Function To Display Popup
-		function div_show() {
-		document.getElementById('abc').style.display = "block";
+		function div_show1() {
+		document.getElementById('SignUp').style.display = "block";
 		}
 		//Function to Hide Popup
-		function div_hide(){
-		document.getElementById('abc').style.display = "none";
+		function div_hide1(){
+		document.getElementById('SignUp').style.display = "none";
+		}
+
+		//Function To Display Popup
+		function div_show2() {
+		document.getElementById('SignIn').style.display = "block";
+		}
+		//Function to Hide Popup
+		function div_hide2(){
+		document.getElementById('SignIn').style.display = "none";
 		}
 	</script>
 </body>
