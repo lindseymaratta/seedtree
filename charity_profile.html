@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Seedtree</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/foundation.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/foundation-overrides.css">
+
+	<!-- JQuery -->
+	<script src="js/modernizr.js"></script>
+	<script src="js/jquery.min.js"></script>
+</head>
+<body>
+	
+<!-- Sign UpPopup form!-->
+	<div id="SignUp">
+		<div id="popupSignup">
+			<form action="#" id="form" method="post" name="form">
+			<img id="close" src="images/x.png" onclick ="div_hide1()">
+			<input id="email" name="email" placeholder="Email" type="text">
+			<input id="password" name="password" placeholder="Choose password" type="text">
+			<input id="password" name="password" placeholder="Repeat password" type="text">
+			<a href="javascript:%20check_empty()" id="submit"><button>Start Giving</button></a>
+			<hr>
+			<button class="facebook">Sign in with Facebook</button>
+			<button class="twitter">Sign in with Twitter</button>
+			<button class="google">Sign in with Google+</button>
+			</form>
+		</div>
+	</div>
+
+<!--end pop up -->
+
+<!--SignIn Popup Form-->
+
+<div id="SignIn">
+		<div id="popupSignIn">
+			<form action="#" id="form" method="post" name="form">
+			<img id="close" src="images/x.png" onclick ="div_hide2()">
+			<input id="email" name="email" placeholder="Email" type="text">
+			<input id="password" name="password" placeholder="Password" type="text">
+			<input type="checkbox" name="remember" value="remember"> Remember me<br>
+			<a href="javascript:%20check_empty()" id="submit"><button>Sign In</button></a>
+			<hr>
+			<button class="facebook">Sign in with Facebook</button>
+			<button class="twitter">Sign in with Twitter</button>
+			<button class="google">Sign in with Google+</button>
+			</form>
+		</div>
+	</div>
+
+<!--end pop up -->
+
+
+<!--Start Header -->
+
+	<header class="container header">
+		<div class="row header">
+		  <nav class="small-12 medium-3 columns">
+		  	<a href="#" class="logo">Seed Tree</a>
+		  </nav>
+		  <div class="small-12 medium-9 columns">
+		    <div class="row">
+		      <nav class="small-12 columns">
+		        <ul class="main-nav">
+									<li class="underline">
+										<a href="#">How it Works</a>
+									</li>
+									<li class="underline">
+										<a href="explore.html">Explore Charities</a>
+									</li>
+									<li class="underline">
+										<a href="#">Sign In</a>
+									</li>
+									<li>
+										<a href="#">
+											<button id="popup" onclick="div_show()">Sign Up</button>
+										</a>
+									</li>
+								</ul>
+		      </nav>
+		    </div>
+		    <div class="row">
+		      <div class="small-12 columns search">
+		        <form>
+		        	<input type="text" name="search" class="searchBox" placeholder="search & donate to local & international charities">
+		        </form>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</header>
+
+<!--End Header-->
+
+<!--Start Body-->
+<div class="container">
+	<div class="row">
+		<div class="small-12 medium-3 columns charity-logo">
+			<img src="images/h4h-logo.jpg">
+		</div>
+		<div class="small-12 medium-9 columns">
+			<div class="row">
+				<h2>Habitat for Humanity</h2>
+			</div>
+			<div class="row">
+				<ul>
+					<li><a href="#">Donate</a></li>
+					<li><a href="#">Add to Favorites</a></li>
+					<li><a href="#">Get in Touch</a></li>
+				</ul>
+			</div>
+			<div class="row">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quo cupiditate architecto, natus distinctio aliquam ipsa minus ipsam consequuntur, nihil tempore odio eos ut saepe itaque nobis explicabo iusto quas.</p>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="small-6 columns">
+		</div>
+		<div class="small-6 columns">
+			<img src="images/calendar.jpg">
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<h3>Photo Gallery</h3>
+		<div class="multiple-items">
+			<div class="slider-content"><img src="images/wwc-logo.jpg"></div>
+ 			<div class="slider-content"><img src="images/lupus-foundation-logo.jpg"></div>
+ 			<div class="slider-content"><img src="images/h4h-logo.jpg"></div>
+		</div>
+	</div>
+	<div class="row">
+		<h3>What Our Supporters are Saying</h3>
+		<div class="small-3 medium-1 columns">
+			<img src="avatar.jpg">
+		</div>
+		<div class="small-6 medium-7 columns end">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi delectus aut rem quod optio enim provident maiores earum quia explicabo. Voluptate labore accusantium voluptatum fugit nemo, perferendis voluptatem! Quia, voluptatibus.</p>
+		</div>
+	</div>
+</div>
+	<script src="js/foundation.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script>
+		$(document).foundation();
+
+		$(document).ready(function(){
+			$('.multiple-items').slick({
+		  infinite: true,
+		  slidesToShow: 3,
+		  slidesToScroll: 3
+			});
+		});
+		
+	</script>
+
+</body>
+</html>
