@@ -12,31 +12,35 @@
 	<script src="js/jquery.min.js"></script>
 </head>
 <body>
-<!---- Start Header -->
-	<div class="container header">
+<!--Start Header -->
+	<header class="container header">
 		<div class="row header">
-		  <div class="small-12 large-3 columns logo">
-		  </div>
-		  <div class="small-12 large-8 columns">
+		  <nav class="small-12 medium-3 columns">
+		  	<a href="index.html" class="logo">Seed Tree</a>
+		  </nav>
+		  <div class="small-12 medium-9 columns">
 		    <div class="row">
-		      <div class="small-12 columns">
+		      <nav class="small-12 columns">
 		        <ul class="main-nav">
-									<li>
+									<li class="underline">
 										<a href="#">How it Works</a>
 									</li>
-									<li>
-										<a href="#">Explore Charities</a>
+									<li class="underline">
+										<a href="explore.html">Explore Charities</a>
 									</li>
 									<li>
-										<a href="#">Sign In</a>
-									</li>
-									<li>
-										<a href="#">
-											<button>Sign Up</button>
+										Welcome, <a data-dropdown="drop1" aria-controls="drop1" aria-expanded="false"> Lindsey<img src="images/icons/settings.svg" class="small"></a>
+										<ul id="drop1" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+										  <li><a href="user_dashboard.html">dashboard</a></li>
+										  <li><a href="charity_dashboard.html">my charities</a></li>
+										  <li><a href="#">settings</a></li>
+										  <li><a href="index.html">sign out</a></li>
+										</ul>
 										</a>
 									</li>
-								</ul>
-		      </div>
+									</ul>
+								
+		      </nav>
 		    </div>
 		    <div class="row">
 		      <div class="small-12 columns search">
@@ -47,8 +51,8 @@
 		    </div>
 		  </div>
 		</div>
-	</div>
-	<!---End Header -->
+	</header>
+<!--End Header-->
 
 	<!--- Start Body -->
 
@@ -83,89 +87,78 @@
 			</div>
 		</div>
 		<div class="row">
-				<h3 class="title-bar">Goals & Initiatives</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum et provident mollitia. Mollitia ut nihil accusantium commodi architecto sed deserunt harum. Rerum, ratione, iusto! Dolore magnam inventore modi, aspernatur assumenda!</p>
-				<h3 class="title-bar">Donations</h3>
-				<table>
-					<tr>
-						<td>From</td>
-						<td>Amount</td>
-						<td>Date</td>
-					</tr>
-					<tr>
-						<td>L. Maratta</td>
-						<td>$75.00</td>
-						<td>15/1/15</td>
-					</tr>
-					<tr>
-						<td>.</td>
-						<td>.</td>
-						<td>.</td>
-					</tr>
-
-				</table>
-				<h3 class="title-bar">Calendar</h3>
-					<div class="row">
-					<div class="small-6 medium-8 columns">
-						<table class="events">
-							<tr>
-								<td>Hackathon</td>
-							</tr>
-							<tr>
-								<td class="time">
-								</td>
-								<td class="place">
-								</td>
-							</tr>
-							<tr>
-								<td>Fundraiser</td>
-							</tr>
-							<tr>
-								<td class="time">
-								</td>
-								<td class="place">
-								</td>
-							</tr>
-							<tr>
-								<td>Meetup</td>
-							</tr>
-							<tr>
-								<td class="time">
-								</td>
-								<td class="place">
-								</td>
-							</tr>
-						</table>
-					</div>
-					<div class="small-6 medium-4 columns">
-						<img src="images/calendar.jpg">
-					</div>
+			<h3 class="title-bar">Goals & Initiatives</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum et provident mollitia. Mollitia ut nihil accusantium commodi architecto sed deserunt harum. Rerum, ratione, iusto! Dolore magnam inventore modi, aspernatur assumenda!</p>
+			<h3 class="title-bar">Donations</h3>
+			<table>
+				<tr>
+					<td>From</td>
+					<td>Amount</td>
+					<td>Date</td>
+				</tr>
+				<tr>
+					<td>L. Maratta</td>
+					<td>$75.00</td>
+					<td>15/1/15</td>
+				</tr>
+				<tr>
+					<td>.</td>
+					<td>.</td>
+					<td>.</td>
+				</tr>
+			</table>
+		</div>
+		<div class="row">
+			<h3 class="title-bar">Calendar</h3>
+				<div class="small-6 medium-8 columns">
+					<table class="events">
+						<tr>
+							<td>Hackathon</td>
+						</tr>
+						<tr>
+							<td class="time">
+							</td>
+							<td class="place">
+							</td>
+						</tr>
+						<tr>
+							<td>Fundraiser</td>
+						</tr>
+						<tr>
+							<td class="time">
+							</td>
+							<td class="place">
+							</td>
+						</tr>
+						<tr>
+							<td>Meetup</td>
+						</tr>
+						<tr>
+							<td class="time">
+							</td>
+							<td class="place">
+							</td>
+						</tr>
+					</table>
 				</div>
-				<h3 class="title-bar">Traffic</h3>
-				<img src="graph.jpg">
-				<table>
-					<tr>
-						<td></td>
-						<td>Hits</td>
-						<td>Conversion Rate</td>
-					</tr>
-					<tr>
-						<td>1/4/15</td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>1/3/15</td>
-						<td></td>
-						<td></td>
-					</tr>
-				</table>
+		<div class="small-6 medium-4 columns">
+			<img src="images/calendar.jpg">
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-12 columns">
+			<div class="panel">
+				<h3 class="title-bar">Weekly Traffic</h3>
+			<canvas id="hitsTotal" height="200" width="940"></canvas>
+			</div>
+		</div>
+	</div>
 
-				<h3 class="title-bar">Photo Gallery</h3>
-				<div class="row">
-					<div class="small-4 medium-3 columns">
-						<img src="#">
-					</div>
+	<h3 class="title-bar">Photo Gallery</h3>
+	<div class="row">
+		<div class="small-4 medium-3 columns">
+			<img src="#">
+		</div>
 					<div class="small-8 medium-6 end columns">
 						<form>
 							<input type="file" name="img">
@@ -225,5 +218,12 @@
 			</div>
 	</div>
 	<script src="js/foundation.min.js"></script>
+	<script src="js/Chart.js"></script>
+	<script src="js/app.js"></script>
+	<script>
+		$(document).foundation();
+	</script>
+
+
 </body>
 </html>
