@@ -12,30 +12,75 @@
 	<script src="js/jquery.min.js"></script>
 </head>
 <body>
-	<div class="container header">
+
+	<!-- Sign UpPopup form!-->
+	<div id="SignUp">
+		<div id="popupSignup">
+			<form action="#" id="form" method="post" name="form">
+			<img id="close" src="images/x.png" onclick ="div_hide1()">
+			<input id="email" name="email" placeholder="Email" type="text">
+			<input id="password" name="password" placeholder="Choose password" type="text">
+			<input id="password" name="password" placeholder="Repeat password" type="text">
+			<a href="javascript:%20check_empty()" id="submit"><button>Start Giving</button></a>
+			<hr>
+			<button class="facebook">Sign in with Facebook</button>
+			<button class="twitter">Sign in with Twitter</button>
+			<button class="google">Sign in with Google+</button>
+			</form>
+		</div>
+	</div>
+
+<!--end pop up -->
+
+<!--SignIn Popup Form-->
+
+<div id="SignIn">
+		<div id="popupSignIn">
+			<form action="user_dashboard.html" id="form" method="post" name="form">
+			<img id="close" src="images/x.png" onclick ="div_hide2()">
+			<input id="email" name="email" placeholder="Email" type="text">
+			<input id="password" name="password" placeholder="Password" type="text">
+			<input type="checkbox" name="remember" value="remember"> Remember me<br>
+			<a href="javascript:%20check_empty()" id="submit"><button>Sign In</button></a>
+			<hr>
+			<button class="facebook">Sign in with Facebook</button>
+			<button class="twitter">Sign in with Twitter</button>
+			<button class="google">Sign in with Google+</button>
+			</form>
+		</div>
+	</div>
+
+<!--end pop up -->
+
+<!--Start Header -->
+	<header class="container header">
 		<div class="row header">
-		  <div class="small-12 large-3 columns logo">
-		  </div>
-		  <div class="small-12 large-8 columns">
+		  <nav class="small-12 medium-3 columns">
+		  	<a href="index.html" class="logo">Seed Tree</a>
+		  </nav>
+		  <div class="small-12 medium-9 columns">
 		    <div class="row">
-		      <div class="small-12 columns">
+		      <nav class="small-12 columns">
 		        <ul class="main-nav">
-									<li>
+									<li class="underline">
 										<a href="#">How it Works</a>
 									</li>
-									<li>
-										<a href="#">Explore Charities</a>
+									<li class="underline">
+										<a href="explore.html">Explore Charities</a>
 									</li>
 									<li>
-										<a href="#">Sign In</a>
-									</li>
-									<li>
-										<a href="#">
-											<button>Sign Up</button>
+										Welcome, <a data-dropdown="drop1" aria-controls="drop1" aria-expanded="false"> Lindsey<img src="images/icons/settings.svg" class="small"></a>
+										<ul id="drop1" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+										  <li><a href="user_dashboard.html">dashboard</a></li>
+										  <li><a href="charity_dashboard.html">my charities</a></li>
+										  <li><a href="#">settings</a></li>
+										  <li><a href="index.html">sign out</a></li>
+										</ul>
 										</a>
 									</li>
-								</ul>
-		      </div>
+									</ul>
+								
+		      </nav>
 		    </div>
 		    <div class="row">
 		      <div class="small-12 columns search">
@@ -46,7 +91,8 @@
 		    </div>
 		  </div>
 		</div>
-	</div>
+	</header>
+<!--End Header-->
 	<div class="container body">
 		<div class="row">
 			<h2 class="title-bar indent">lindsey maratta</h2>
