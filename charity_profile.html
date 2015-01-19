@@ -111,15 +111,21 @@
 			<img src="images/h4h-logo.jpg">
 		</div>
 		<div class="small-12 medium-9 columns">
-			<div class="row">
+			<div class="row charity-profile">
 				<h2>Habitat for Humanity</h2>
 			</div>
-			<div class="row">
-				<ul>
-					<li><a id="popup" onclick="div_show3()">Donate</a></li>
-					<li><a href="#">Add to Favorites</a></li>
-					<li><a href="#">Get in Touch</a></li>
-				</ul>
+			<div class="row charity-profile">
+				<ul class="profile-nav">
+					<li><a id="popup" onclick="div_show3()"><img src="images/icons/check-orange.png">Donate</a></li>
+					<li><a href="#"><img src="images/icons/heart-orange.png">Add to Favorites</li>
+					<li><a href="#"><a data-dropdown="drop1" aria-controls="drop1" aria-expanded="false"><img src="images/icons/chat-orange.png">Get in Touch</a></li>
+						<ul id="drop1" class="f-dropdown contact-drop" data-dropdown-content aria-hidden="true" tabindex="-1">
+										  <li><a href="tel:+18605555555"><img src="images/icons/chat.png">+1 (860) 555-5555</a></li>
+										  <li><a href="mailto:info@h4h.org"><img src="images/icons/mail.png">info@h4h.org</a></li>
+										  <li><a href=""><img src="images/icons/facebook.png">facebook</a></li>
+										  <li><a href=""><img src="images/icons/twitter.png">twitter</a></li>							
+						</ul>
+					</ul>
 			</div>
 			<div class="row">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quo cupiditate architecto, natus distinctio aliquam ipsa minus ipsam consequuntur, nihil tempore odio eos ut saepe itaque nobis explicabo iusto quas.</p>
@@ -129,6 +135,44 @@
 	<hr>
 	<div class="row">
 		<div class="small-6 columns">
+			<table class="events">
+				<tr>
+					<td>Bake-off </td>
+				</tr>
+				<tr>
+					<td class="time">
+					</td>
+					<td class="place">
+					</td>
+				</tr>
+				<tr>
+					<td>Construction</td>
+				</tr>
+				<tr>
+					<td class="time">
+					</td>
+					<td class="place">
+					</td>
+				</tr>
+				<tr>
+					<td>Meetup</td>
+				</tr>
+				<tr>
+					<td class="time">
+					</td>
+					<td class="place">
+					</td>
+				</tr>
+				<tr>
+					<td>Fundraiser</td>
+				</tr>
+				<tr>
+					<td class="time">
+					</td>
+					<td class="place">
+					</td>
+				</tr>
+			</table>
 		</div>
 		<div class="small-6 columns">
 			<img src="images/calendar.jpg">
@@ -145,10 +189,10 @@
 	</div>
 	<div class="row">
 		<h3>What Our Supporters are Saying</h3>
-		<div class="small-3 medium-1 columns">
-			<img src="avatar.jpg">
+		<div class="small-3 medium-2 columns medium-offset-1">
+			<img src="images/avatar.jpg" class="comment">
 		</div>
-		<div class="small-6 medium-7 columns end">
+		<div class="small-9 medium-8 columns end">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi delectus aut rem quod optio enim provident maiores earum quia explicabo. Voluptate labore accusantium voluptatum fugit nemo, perferendis voluptatem! Quia, voluptatibus.</p>
 		</div>
 	</div>
