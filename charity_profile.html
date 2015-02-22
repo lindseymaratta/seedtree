@@ -36,7 +36,7 @@
 
 <div id="SignIn">
 		<div id="popupSignIn">
-			<form action="#" id="form" method="post" name="form">
+			<form action="user_dashboard.html" id="form" method="post" name="form">
 			<img id="close" src="images/x.png" onclick ="div_hide2()">
 			<input id="email" name="email" placeholder="Email" type="text">
 			<input id="password" name="password" placeholder="Password" type="text">
@@ -54,13 +54,39 @@
 <!--start pop up-->
 <div id="Donate">
 		<div id="popupDonate">
-			<form action="user_dashboard.html" id="form" method="post" name="form">
+			<form action="charity_profile.html" id="form" method="post" name="form">
 			<img id="close" src="images/x.png" onclick ="div_hide3()">
-			<input id="amount" name="amount" placeholder="amount" type="text">
-			<input id="password" name="password" placeholder="Password" type="text">
-			<input type="checkbox" name="remember" value="remember">Make Recurring<br>
-			<a href="javascript:%20check_empty()" id="submit"><button>Donate</button></a>
+			<h2 class="inverse">Make Donation</h2>
+				<h3 class="inverse">Contact Info</h3>
+					<input id="first-name" placeholder="first name" type="text">
+					<input id="last-name" placeholder="last name" type="text"><input id="email" placeholder="email" type="text">
+					<input id="password" placeholder="password (optional to create account" type="text">
+					<input id="address1" placeholder="address line 1" type="text">
+					<input id="address2" placeholder="address line 2" type="text">
+					<input id="city" placeholder="city" type="text">
+					<select name="country">
+						<option value="">Country...</option>
+						<option value="Afganistan">United States</option>
+						<option value="Afganistan">United Kingdom</option>
+						<option value="Afganistan">U.A.E.</option>
+					</select><br>
+				<h3 class="inverse">Payment Info</h3>
+					<input placeholder="Credit Card Number" type="text">
+					<input placeholder="CVC" type="text">
+					<input type="date" label="Expiration"
+					Donating:<br>
+			<input id="amount" name="amount" placeholder="$ amount" type="text">
+				to:
+			<select name="charity">
+				<option value="">Charities..</option>
+				<option value="">Habitat for Humanity</option>
+			</select><br>
+			<a href="javascript:%20check_empty()" id="submit"><button>Donate</button>
+			<br>
+			</a>
+			<a href="#" class="inverse">Log in</a> to access saved information, recent charities, and set recurring donations.
 			</form>
+
 		</div>
 	</div>
 
@@ -134,7 +160,7 @@
 	</div>
 	<hr>
 	<div class="row">
-		<div class="small-6 columns">
+		<div class="small-12 medium-8 columns">
 			<table class="events">
 				<tr>
 					<td>Bake-off </td>
@@ -174,7 +200,7 @@
 				</tr>
 			</table>
 		</div>
-		<div class="small-6 columns">
+		<div class="small-12 medium-4 columns">
 			<img src="images/calendar.jpg">
 		</div>
 	</div>
@@ -198,7 +224,6 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi delectus aut rem quod optio enim provident maiores earum quia explicabo. Voluptate labore accusantium voluptatum fugit nemo, perferendis voluptatem! Quia, voluptatibus.</p>
 		</div>
 	</div>
-</div>
 
 <div class="container footer">
 		<div class="row">
@@ -242,6 +267,7 @@
 				<p>Or better yet, &nbsp &nbsp <button id="popup" onclick="div_show1()">Join Us</button></p>
 			</div>
 	</div>
+</div>
 	<script src="js/foundation.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script>

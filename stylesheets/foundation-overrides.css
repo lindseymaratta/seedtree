@@ -189,6 +189,19 @@ h3 {
 	font-size: 110%;
 	font-weight: 400;
 }
+
+.inverse {
+	color:white;
+}
+a.inverse {
+	color:white;
+	text-decoration: underline;
+}
+a.inverse:hover{
+	color:white;
+	text-decoration: none;
+}
+
 /*
 Landing page Masthead styles
 =================================
@@ -384,7 +397,16 @@ text-align: center;
 
 }
 
+div#popupDonate {
+	width: 400px;
+	padding: 30px;
+	margin-left:-200px;
+}
 
+.small-button {
+	padding:5px;
+	text-transform: none;
+}
 .facebook, .twitter, .google {
 	position: relative;
 	text-transform: none;

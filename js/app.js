@@ -1,10 +1,10 @@
-$(document).foundation();
+// $(document).foundation();
 
 		var weeklyHits = {
       labels : ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
       datasets : [
         {
-        	label: "My First dataset"
+        	label: "My First dataset",
           fillColor : "rgba(220,220,220,0.5)",
           strokeColor : "rgba(220,220,220,1)",
           pointColor : "rgba(220,220,220,1)",
@@ -12,10 +12,10 @@ $(document).foundation();
           data : [5,5,5,6,6,5,5]
         },
         {
-        	label: "My second dataset"
-          fillColor : "rgba(52,152,219,0.5)",
-          strokeColor : "rgba(52,152,219,1)",
-          pointColor : "rgba(52,152,219,1)",
+        	label: "My second dataset",
+          fillColor : "rgba(6,153,108,0.5)",
+          strokeColor : "rgba(6,153,108,1)",
+          pointColor : "rgba(212,86,52,1)",
           pointStrokeColor : "#fff",
           data : [2.8,4.8,4.0,1.9,9.6,2.7,10]
         }
