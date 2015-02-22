@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Seedtree</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/foundation.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="stylesheets/foundation-overrides.css">
+
+	<!-- JQuery -->
+	<script src="js/modernizr.js"></script>
+	<script src="js/jquery.min.js"></script>
+</head>
+<body>
+<!--Start Header -->
+	<header class="container header">
+		<div class="row header">
+		  <nav class="small-12 medium-3 columns">
+		  	<a href="index.html" class="logo">Seed Tree</a>
+		  </nav>
+		  <div class="small-12 medium-9 columns">
+		    <div class="row">
+		      <nav class="small-12 columns">
+		        <ul class="main-nav">
+									<li class="underline">
+										<a href="#">How it Works</a>
+									</li>
+									<li class="underline">
+										<a href="explore.html">Explore Charities</a>
+									</li>
+									<li>
+										Welcome, <a data-dropdown="drop1" aria-controls="drop1" aria-expanded="false"> Lindsey<img src="images/icons/settings.svg" class="small"></a>
+										<ul id="drop1" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+										  <li><a href="user_dashboard.html">dashboard</a></li>
+										  <li><a href="charity_dashboard.html">my charities</a></li>
+										  <li><a href="#">settings</a></li>
+										  <li><a href="index.html">sign out</a></li>
+										</ul>
+										</a>
+									</li>
+									</ul>
+								
+		      </nav>
+		    </div>
+		    <div class="row">
+		      <div class="small-12 columns search">
+		        <form>
+		        	<input type="text" name="search" class="searchBox" placeholder="search & donate to local & international charities">
+		        </form>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</header>
+<!--End Header-->
+
+	<!--- Start Body -->
+<div class="container">
+	<div class="row">
+		<dl class="tabs" data-tab>
+	  <dd class="active"><a href="#panel1">Women Who Code</a></dd>
+	  <dd><a href="#panel2">Habitat for Humanity</a></dd>
+	  <dd><a href="#panel3">Create New Charity...</a></dd>
+	</dl>
+	</div>
+	<div class="tabs-content">
+	  <div class="content active" id="panel1">
+			<div class="row">
+					<h3 class="title-bar">Information</h3>
+			</div>
+			<div class="row">
+				<div class="small-6 medium-4 columns charity-logo">
+						<img src="images/wwc-logo.png">
+				</div>
+				<div class="small-6 medium-8 columns">
+					<div class="row">
+						<div class="small-12 medium-6 columns info-1">
+							<ul>
+								<li>+1 (555) 555-5555</li>
+								<li>1234 Bay Avenue</1i>
+								<li>San Francisco, CA 989989</li>
+							</ul>
+						</div>
+						<div class="small-12 medium-6 columns">
+							<ul>
+								<li>wwc@gmail.com</li>
+								<li>www.facebook.com/wwc</li>
+								<li>www.twitter.com/wwc</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row description">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ab, quas asperiores. Deleniti a, maxime fugit atque libero quibusdam expedita! Inventore natus animi eveniet ullam totam cupiditate, non reiciendis maxime.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<h3 class="title-bar">Goals & Initiatives</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum et provident mollitia. Mollitia ut nihil accusantium commodi architecto sed deserunt harum. Rerum, ratione, iusto! Dolore magnam inventore modi, aspernatur assumenda!</p>
+				<h3 class="title-bar">Donations</h3>
+				<table>
+					<tr>
+						<td>From</td>
+						<td>Amount</td>
+						<td>Date</td>
+					</tr>
+					<tr>
+						<td>L. Maratta</td>
+						<td>$75.00</td>
+						<td>15/1/15</td>
+					</tr>
+					<tr>
+						<td>.</td>
+						<td>.</td>
+						<td>.</td>
+					</tr>
+				</table>
+			</div>
+			<div class="row">
+				<h3 class="title-bar">Calendar</h3>
+					<div class="small-12 medium-8 columns">
+						<table class="events">
+							<tr>
+								<td>Hackathon</td>
+							</tr>
+							<tr>
+								<td class="time">
+								</td>
+								<td class="place">
+								</td>
+							</tr>
+							<tr>
+								<td>Fundraiser</td>
+							</tr>
+							<tr>
+								<td class="time">
+								</td>
+								<td class="place">
+								</td>
+							</tr>
+							<tr>
+								<td>Meetup</td>
+							</tr>
+							<tr>
+								<td class="time">
+								</td>
+								<td class="place">
+								</td>
+							</tr>
+						</table>
+					</div>
+			<div class="small-12 medium-4 columns">
+				<img src="images/calendar.jpg">
+			</div>
+		</div>
+		<div class="row">
+			<div class="large-12 columns">
+				<div class="panel">
+					<h3 class="title-bar">Weekly Traffic</h3>
+					<canvas id="hitsTotal" height="200" width="940"></canvas>
+				</div>
+			</div>
+		</div>
+
+		<h3 class="title-bar">Photo Gallery</h3>
+		<div class="row hide-for-small-only photo-gallery">
+			<div class="small-4 medium-3 columns">
+				<img src="images/photo-gallery.jpg">
+			</div>
+			<div class="small-8 medium-6 end columns">
+				<form>
+					<input type="file" name="img">
+					<textarea placeholder="Photo caption"></textarea><br>
+					<input type="submit" class="outline" value="+ New Photo">
+					<a href="#"><button class="outline">Manage existing photos</button>
+				</form>
+			</div>
+		</div>
+		<div class="row show-for-small-only photo-gallery">
+			<div class="small-6 columns add-new">
+				<img src="images/icons/plus-orange.png">
+			</div>
+			<div class="small-6 columns take-photo">
+				<img src="images/icons/camera-orange.png">
+			</div>
+		</div>
+	 </div>
+	</div>
+
+<!--End Body -->
+
+<!--Start Footer-->
+
+	<div class="container footer">
+		<div class="row">
+			<div class="small-12 medium-2 columns about">
+				<ul class="footer-list">
+					<li>About</li>
+					<li><a href="#">Story</a></li>
+					<li><a href="#">Press</a></li>
+					<li><a href="#">People</a></li>
+					<li><a href="#">Careers</a></li>
+				</ul>
+			</div>
+			<div class="small-12 medium-2 columns help">
+				<ul class="footer-list">
+					<li>Help</li>
+					<li><a href="#">Support</a></li>
+					<li><a href="#">Security</a></li>
+					<li><a href="#">Legal</a></li>
+					<li><a href="#">Privacy</a></li>
+				</ul>
+			</div>
+			<div class="small-12 medium-3 columns contact">
+				<ul class="footer-list">
+					<li>Contact</li>
+					<li>+1 555 555-5555</li>
+					<li><a href="mailto:">info@seedtree.org</a></li>
+					<li>P.O. Box 55555</li>
+					<li>New York, NY 123456</li>
+				</ul>
+			</div>
+			<div class="small-12 medium-5 columns social">
+				<ul class="footer-list">
+					<li>Follow us on these social channels:</li>
+				</ul>
+				<ul class="social-icons">
+					<li><a href="#" class="pulse-grow"><img src="images/icons/facebook.png"></a></li>
+					<li><a href="#" class="pulse-grow"><img src="images/icons/twitter.png"></a></li>
+					<li><a href="#" class="pulse-grow"><img src="images/icons/instagram.png"></a></li>
+					<li><a href="#" class="pulse-grow"><img src="images/icons/google.png"></a></li>
+				</ul>
+	</div>
+	<script src="js/foundation.min.js"></script>
+	<script src="js/Chart.js"></script>
+	<script src="js/app.js"></script>
+	<script>
+		$(document).foundation();
+	</script>
+
+
+</body>
+</html>
